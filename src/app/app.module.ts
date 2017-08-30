@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TopoComponent } from './topo/topo.component';
-import { RodapeComponent } from './rodape/rodape.component';
 import { HomeComponent } from './home/home.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopoComponent,
-    RodapeComponent,
-    HomeComponent
+    HomeComponent,
+    RodapeComponent
   ],
   imports: [
     BrowserModule
