@@ -3,12 +3,12 @@ import {OfertasService } from '../ofertas.service';
 import {Oferta } from '../shared/oferta.models';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  selector: 'app-destaque',
+  templateUrl: './destaque.component.html',
+  styleUrls: ['./destaque.component.css'],
   providers: [OfertasService]
 })
-export class HomeComponent implements OnInit {
+export class DestaqueComponent implements OnInit {
 
   public ofertas: Oferta[];
 
@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    this.ofertasService.getOfertas()
+    this.ofertasService.getOfertasDestaque()
       .then(( ofertas: Oferta[] ) => {
         this.ofertas = ofertas;
       })

@@ -1,0 +1,17 @@
+img {
+    border-radius: 5px;
+    width: 320px;
+    height: 200px
+}
+
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 50px;
+}
+
+.diversao {
+    border-bottom: solid 1px #D7D7D7;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}

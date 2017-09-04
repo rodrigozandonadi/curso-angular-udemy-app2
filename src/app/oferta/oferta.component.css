@@ -1,0 +1,38 @@
+h1 {
+    color: #003568;
+}
+
+h4 {
+    color: #004382;
+}
+
+.oferta {
+    margin-top: 25px;
+    margin-bottom:50px;
+}
+
+.oferta-content {
+    margin-top: 40px;
+}
+
+.oferta img {
+    width: 372px;
+    height: 240px;
+}
+
+.thumbnails {
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 124px;
+    height: 80px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    color: #f60;
+    font-weight: bold;
+    font-size: 50px;
+}

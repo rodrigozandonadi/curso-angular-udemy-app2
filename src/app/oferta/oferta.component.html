@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="oferta" *ngIf="oferta !== undefined">
+
+    <div class="row">
+      <div class="col text-center">
+        <h1>{{ oferta.titulo }}</h1>
+        <h4>Uma oferta de <strong>{{ oferta.anunciante}}</strong></h4>
+      </div>
+    </div>
+
+    <hr />
+    <div class="oferta-content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img_capa">
+            <img [src]="oferta.imagens[0].url" />
+          </div>
+
+          <div class="thumbnails">
+            <img *ngFor="let imagem of oferta.imagens" [src]="imagem.url" />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col text-center">
+              <p>{{ oferta.descricao_oferta }}</p>
+              <p>Por apenas</p>
+            </div>
+            
+          </div>
+
+          <div class="row">
+            <div class="col text-center">
+              <span class="preco">R$ {{ oferta.valor.toFixed(2).toString().replace(".", ",") }}</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col text-center">
+              <button type="button" class="btn btn-warning btn-lg">Adicionar ao carrinho</button>
+            </div>
+          </div>
+            
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
