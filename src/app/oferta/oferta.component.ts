@@ -3,6 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { Oferta } from '../shared/oferta.models';
 import { OfertasService } from '../ofertas.service';
 
+import { ComoUsarComponent } from './como-usar/como-usar.component';
+import { OndeFicaComponent } from './onde-fica/onde-fica.component';
+
 @Component({
   selector: 'app-oferta',
   templateUrl: './oferta.component.html',
@@ -23,7 +26,6 @@ export class OfertaComponent implements OnInit {
     this.ofertasService.getOfertaPorId(this.route.snapshot.params['id'])
       .then(( oferta: Oferta ) => {
         this.oferta = oferta;
-        console.log(this.oferta);
       });
   }
 

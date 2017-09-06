@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col text-center">
         <h1>{{ oferta.titulo }}</h1>
-        <h4>Uma oferta de <strong>{{ oferta.anunciante}}</strong></h4>
+        <h4>Uma oferta de <span class="anunciante">{{ oferta.anunciante}}</span></h4>
       </div>
     </div>
 
@@ -48,4 +48,21 @@
     </div>
 
   </div>
+
+  <div class="row guia">
+    <div class="col">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active"data-toggle="tab" routerLink="como-usar" role="tab">Como usar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" routerLink="onde-fica" role="tab">Profile</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  
 </div>
